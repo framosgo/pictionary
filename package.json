@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "lerna run start",
-    "start:prod": "lerna run start:prod"
+    "start:prod": "npm run build && lerna run start:prod",
+    "build": "lerna run build"
   },
   "workspaces": [
     "packages/*"
