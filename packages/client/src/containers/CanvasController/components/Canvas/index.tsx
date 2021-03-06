@@ -33,8 +33,8 @@ const Canvas: React.FC<Props> = ({ onDraw, drawingData, color }) => {
       if(shouldSend){
         const scaledDrawingData: DrawingData = {
           ...data,
-          startPoint: scalePoint(data.startPoint, canvasRef.current, ScaleOption.ScaleUp),
-          endPoint: scalePoint(data.endPoint, canvasRef.current, ScaleOption.ScaleUp),
+          startPoint: scalePoint(data.startPoint, canvasRef.current, ScaleOption.ScaleDown),
+          endPoint: scalePoint(data.endPoint, canvasRef.current, ScaleOption.ScaleDown),
         }
         onDraw(scaledDrawingData);
       }
