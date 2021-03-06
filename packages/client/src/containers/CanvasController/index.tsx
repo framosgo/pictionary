@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
-import Canvas from '../../components/Canvas';
+import React from 'react';
+import { DrawingData } from 'shared/@types';
+import Canvas from './components/Canvas';
 
+const CanvasController: React.VFC = () => {
+  const handleDraw = (data: DrawingData) => {
+    console.log(data);
+  }
 
-interface Props {
+  return (
+    <Canvas color={'black'} onDraw={handleDraw}/>
+  )
+};
 
-}
-
-export const CanvasController: React.FC<Props> = (props) => {
-
-    
-
-    return (
-        <Canvas/>
-    )
-}
+export default CanvasController;

@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {SocketContext, socket} from './context/socket';
-import Dummy from './components/Dummy';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import CanvasController from './containers/CanvasController';
 
 ReactDOM.render(
   <React.StrictMode>
     <SocketContext.Provider value={socket}>
-      <Dummy />
+      <CanvasController />
     </SocketContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')

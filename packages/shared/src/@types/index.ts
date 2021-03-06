@@ -1,7 +1,10 @@
+export type Point = {
+  x: number;
+  y: number;
+}
+
 export type DrawingData = {
-  x0: number;
-  x1: number;
-  y0: number;
-  y1: number;
+  startPoint: Point;
+  endPoint: Point;
   color: string;
 }
