@@ -1,0 +1,13 @@
+.picker {
+    border-radius: 50%;
+    width: 100%;
+    min-height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.picker:before {
+    content: "";
+    float: left; /* This lets the content fill the outer box */
+    padding-top: 100%; /* ratio of 1:1 */
+}

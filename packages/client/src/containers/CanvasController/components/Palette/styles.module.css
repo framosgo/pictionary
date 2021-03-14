@@ -1,0 +1,15 @@
+.palette {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .palette {
+        max-width: 800px;
+    }
+}
